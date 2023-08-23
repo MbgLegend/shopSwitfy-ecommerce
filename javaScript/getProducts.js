@@ -36,12 +36,12 @@ export async function getProducts(startIndex, containerSelector, endIndex, categ
         `
         div.addEventListener("click", () => {
             localStorage.setItem("product_details", product.id)
-            const condition = document.querySelector("")
+            const condition = document.getElementById("pressReleases")
 
-            if (typeof window !== 'undefined'){
-                window.location.href = ""
+            if (!condition){
+                window.location.href = "../HTML/productPage.html"
             } else {
-                
+                window.location.href = "HTML/productPage.html"
             }
         })
 
