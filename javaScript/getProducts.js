@@ -1,12 +1,3 @@
-let link = ""
-
-if (!document.getElementById("pressReleases")) {
-    // link = "../HTML/productPage.html"
-    console.log("did not work")
-} else {
-    link = "HTML/productPage.html"
-}
-
 export async function getProducts(startIndex, containerSelector, endIndex, category, reset) {
     const container = document.querySelector(containerSelector)
     if (reset === true) {
@@ -46,7 +37,15 @@ export async function getProducts(startIndex, containerSelector, endIndex, categ
         `
         div.addEventListener("click", () => {
             localStorage.setItem("product_details", product.id)
-            window.location.href = link
+            let link = ""
+
+            if (!document.getElementById("pressReleases")) {
+                // link = "../HTML/productPage.html"
+                console.log("did not work")
+            } else {
+                link = "HTML/productPage.html"
+                window.location.href = link
+            }
         })
 
         container.appendChild(div)
