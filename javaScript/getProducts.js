@@ -37,7 +37,7 @@ export async function getProducts(startIndex, containerSelector, endIndex, categ
         `
         div.addEventListener("click", () => {
             localStorage.setItem("product_details", product.id)
-            window.location.href = "https://mbglegend.github.io/shopSwitfy-ecommerce/HTML/productPage.html"
+            window.location.href = "HTML/productPage.html"
         })
 
         container.appendChild(div)
