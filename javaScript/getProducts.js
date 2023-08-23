@@ -3,7 +3,6 @@ export async function getProducts(startIndex, containerSelector, endIndex, categ
     if (reset === true) {
         container.innerHTML = ""
     }
-    
     let API_link
 
     if (category === null) {
