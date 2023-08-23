@@ -1,6 +1,8 @@
 let link = ""
+
 if (!document.getElementById("pressReleases")) {
-    link = "../HTML/productPage.html"
+    // link = "../HTML/productPage.html"
+    console.log("did not work")
 } else {
     link = "HTML/productPage.html"
 }
