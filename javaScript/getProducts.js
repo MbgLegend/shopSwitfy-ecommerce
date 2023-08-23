@@ -37,9 +37,14 @@ export async function getProducts(startIndex, containerSelector, endIndex, categ
         `
         div.addEventListener("click", () => {
             localStorage.setItem("product_details", product.id)
-            window.location.href = "HTML/productPage.html" || "../HTML/productPage.html"
+            let link = "'
+            if (document.querySelector(".Press-Releases") {
+                link = "HTML/productPage.html"
+            } else {
+                link = "../HTML/productPage.html"
+            }
+            window.location.href = link
         })
-
         container.appendChild(div)
     }
 }
