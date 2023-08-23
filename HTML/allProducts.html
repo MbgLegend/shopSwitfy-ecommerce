@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f921ec9255.js" crossorigin="anonymous"></script>
+    <title>ShopSwiftly</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../Images/favicon.png">
+    <script defer type="module" src="../app.js"></script>
+    <script defer type="module" src="../javaScript/cart.js"></script>
+    <script defer type="module" src="../javaScript/filter.js"></script>
+    <style>
+        .products .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .products .flex select {
+            padding: 0.5rem;
+            appearance: none;
+            font-size: 1.25rem;
+            border: 1px solid #33333b57;
+            outline: none;
+            text-align: center;
+        }
+        @media only screen and (max-width: 475px) {
+            .products .flex {
+                display: block;
+                text-align: center;
+            }
+            .products .flex select {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="../index.html">
+            <img src="../Images/logo.png" alt="logo" class="logo">
+        </a>
+
+        <ul class="content-holder">
+            <li>
+                <a href="../index.html">home</a>
+            </li>
+            <li>
+                <a href="allProducts.html" class="active">all products</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-x" id="close"></i>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </nav>
+
+    <!-- products -->
+    <section class="products product">
+        <div class="flex">
+            <h1 style="font-size: 1.8rem">All products</h1>
+            <select>
+                <option value="All products">All products</option>
+            </select>
+        </div>
+        <div class="grid">
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="../Images/logo.png" alt="logo">
+            <p>ShopSwiftly: Your ultimate online shopping destination, offering a vast array of products from fashion to electronics. With lightning-fast navigation and secure checkout, we ensure a seamless shopping experience from click to doorstep.</p>
+            <ul class="icon-holder">
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-telegram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h1>©️ copyright 2023 ShopSwiftly</h1>
+    </footer>
+
+    <!-- User cart -->
+    <div class="user-cart">
+        <div class="flex">
+            <h1>Shopping Cart (<span class="amount-of-items">0</span>)</h1>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+        </div>
+        <div class="container">
+        </div>
+        <hr>
+        <div class="pro-container">
+            <h2>Subtotal</h2>
+            <div class="flex">
+                <p id="price">0.00$</p>
+                <button>Go to checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

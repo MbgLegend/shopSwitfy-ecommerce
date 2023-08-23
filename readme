@@ -1,0 +1,8 @@
+API_LINK = https://dummyjson.com/products
+This API allows us to use free fake products.
+
+This project was done using vanilla CSS and javaScript only. 
+
+Hosted version: https://mbglegend.github.io/ShopSwiftly-ecommerce/
+
+- Made by MBG_LEGEND

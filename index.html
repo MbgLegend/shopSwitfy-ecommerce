@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSwiftly</title>
+    <script src="https://kit.fontawesome.com/f921ec9255.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="app.js"></script>
+    <script defer type="module" src="javaScript/cart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="Images/logo.png" alt="logo" class="logo">
+        </a>
+
+        <ul class="content-holder">
+            <li>
+                <a href="index.html" class="active">home</a>
+            </li>
+            <li>
+                <a href="HTML/allProducts.html">all products</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+            </li>
+            <li>
+                <i class="fa-solid fa-x" id="close"></i>
+            </li>
+        </ul>
+
+        <i class="fa-solid fa-bars" id="menu"></i>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="grid">
+            <div class="Home-decoration" onclick="window.location.href = 'HTML/allProducts.html'">
+                <p>Home-decoration</p>
+            </div>
+            <div class="groceries" onclick="window.location.href = 'HTML/allProducts.html'">
+                <p>groceries</p>
+            </div>
+            <aside class="container">
+                <div class="electronics" onclick="window.location.href = 'HTML/allProducts.html'">
+                    <p>electronics</p>
+                </div>
+                <div class="skincare" onclick="window.location.href = 'HTML/allProducts.html'">
+                    <p>skincare</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Product preview -->
+    <div class="product preview">
+        <h1>Product Preview</h1>
+        <div class="grid">
+        </div>
+    </div>
+
+    <!-- Repair services -->
+    <div class="repair-services">
+        <div class="content">
+            <div class="text">
+                <h5>Repair Services</h5>
+                <p>Up to 20% off - all Electronics & Accessories</p>
+                <button  onclick="window.location.href = 'HTML/allProducts.html'">Shop now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New arrivals -->
+    <div class="product arrivals">
+        <h1>New Arrivals</h1>
+        <div class="grid">
+        </div>
+    </div>
+
+    <!--  Press Releases -->
+    <div class="Press-Releases">
+        <div class="container">
+            <div class="text-container">
+                <h2>Sign up for our Press Releases</h2>
+                <p>Elevate your information access by subscribing to our Press Releases. Stay at the forefront with timely, accurate updates delivered promptly upon release.</p>
+                <div>
+                    <input type="email" placeholder="Enter your email address" id="email">
+                    <button type="submit" id="submit">Subscribe</button>
+                </div>
+                <span id="errorMessage"></span>
+            </div>
+            <div class="image-container">
+                <img src="Images/banner.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <img src="Images/logo.png" alt="logo">
+            <p>ShopSwiftly: Your ultimate online shopping destination, offering a vast array of products from fashion to electronics. With lightning-fast navigation and secure checkout, we ensure a seamless shopping experience from click to doorstep.</p>
+            <ul class="icon-holder">
+                <li>
+                    <i class="fa-brands fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-twitter"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-telegram"></i>
+                </li>
+                <li>
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <h1>©️ copyright 2023 ShopSwiftly</h1>
+    </footer>
+
+    <!-- User cart -->
+    <div class="user-cart">
+        <div class="flex">
+            <h1>Shopping Cart (<span class="amount-of-items">0</span>)</h1>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+        </div>
+        <div class="container">
+        </div>
+        <hr>
+        <div class="pro-container">
+            <h2>Subtotal</h2>
+            <div class="flex">
+                <p id="price">0.00$</p>
+                <button>Go to checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
