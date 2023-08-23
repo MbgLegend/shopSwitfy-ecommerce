@@ -1,8 +1,8 @@
 let link = ""
-if (document.getElementById("pressReleases")) {
-    link = "HTML/productPage.html"
-} else {
+if (!document.getElementById("pressReleases")) {
     link = "../HTML/productPage.html"
+} else {
+    link = "HTML/productPage.html"
 }
 
 export async function getProducts(startIndex, containerSelector, endIndex, category, reset) {
