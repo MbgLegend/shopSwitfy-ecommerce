@@ -1,10 +1,6 @@
-#shopSwtify Ecommerce Website
 API_LINK = https://dummyjson.com/products
 This API allows us to use free fake products.
 
 This project was done using vanilla CSS and javaScript only. 
 
 Demo: https://mbglegend.github.io/shopSwitfy-ecommerce/index.html
-
-**Website Preview**
-![mbglegend github io_shopSwitfy-ecommerce_index html](https://github.com/MbgLegend/shopSwitfy-ecommerce/assets/95979029/00151be7-59b7-4c72-98bd-203aa504c62d)
